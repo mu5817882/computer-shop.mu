@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usman Computer - Computer Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#128187;</span>
+        <span>Usman <span class="accent">Computer</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">
+        <span class="cart-icon">&#128722;</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Your One-Stop <span class="accent">Computer Shop</span></h1>
+        <p>Build, upgrade, and repair computers with quality parts and expert service at the best prices.</p>
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-primary">Shop Now</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img
+          src="https://images.pexels.com/photos/18966455/pexels-photo-18966455.jpeg?auto=compress&cs=tinysrgb&w=900"
+          alt="Gaming PC setup with neon lights at Usman Computer"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">&#128737;</div>
+        <h3>Fast Delivery</h3>
+        <p>Same-day delivery across the city for in-stock items.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#9989;</div>
+        <h3>Genuine Parts</h3>
+        <p>100% original and warranty-covered hardware.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128176;</div>
+        <h3>Best Prices</h3>
+        <p>Competitive pricing with regular discounts and offers.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128295;</div>
+        <h3>Expert Support</h3>
+        <p>Professional repair and free installation support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="accent">Products</span></h2>
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="desktop">Desktops</button>
+        <button class="filter-btn" data-filter="laptop">Laptops</button>
+        <button class="filter-btn" data-filter="gpu">Graphics Cards</button>
+        <button class="filter-btn" data-filter="cpu">Processors</button>
+        <button class="filter-btn" data-filter="accessory">Accessories</button>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Our <span class="accent">Services</span></h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">&#128295;</div>
+          <h3>Computer Repair</h3>
+          <p>Fast diagnosis and repair for desktops and laptops.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128736;</div>
+          <h3>Custom PC Building</h3>
+          <p>We build powerful rigs for gaming and work.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128421;</div>
+          <h3>Software Installation</h3>
+          <p>Windows, drivers, antivirus and essential apps.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128190;</div>
+          <h3>Data Recovery</h3>
+          <p>Recover your important files and documents.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128268;</div>
+          <h3>Cleaning &amp; Maintenance</h3>
+          <p>Keep your system cool, clean and running fast.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128250;</div>
+          <h3>CCTV &amp; Networking</h3>
+          <p>Camera installation and home/office networking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2 class="section-title">About <span class="accent">Usman Computer</span></h2>
+        <p>Usman Computer is a trusted computer shop dedicated to providing quality hardware, honest advice, and dependable service. Whether you need a new gaming PC, an office laptop, or a quick repair, our experienced team is here to help.</p>
+        <ul class="about-list">
+          <li>&#10003; Years of experience in computers &amp; electronics</li>
+          <li>&#10003; Wide range of branded products in stock</li>
+          <li>&#10003; Friendly and knowledgeable staff</li>
+          <li>&#10003; Warranty on all parts and repairs</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <div class="stat">
+          <strong>10+</strong>
+          <span>Years Experience</span>
+        </div>
+        <div class="stat">
+          <strong>5000+</strong>
+          <span>Happy Customers</span>
+        </div>
+        <div class="stat">
+          <strong>1000+</strong>
+          <span>Products in Stock</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact <span class="accent">Us</span></h2>
+      <div class="contact-inner">
+        <div class="contact-info">
+          <div class="info-row">
+            <span class="info-icon">&#128205;</span>
+            <div>
+              <h4>Address</h4>
+              <p>Main Market, Computer City Road, Your City</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">&#128222;</span>
+            <div>
+              <h4>Phone</h4>
+              <p>+92 300 0000000</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">&#9993;</span>
+            <div>
+              <h4>Email</h4>
+              <p>info@usmancomputer.com</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">&#128337;</span>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon - Sat: 10:00 AM - 9:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Usman <span class="accent">Computer</span></h3>
+        <p>Quality computers, parts and service you can trust.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Usman Computer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-panel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" id="cartClose">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <button class="btn btn-primary btn-full" id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
